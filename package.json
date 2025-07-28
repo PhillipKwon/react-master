@@ -15,6 +15,7 @@
     "vue:counter": "turbo run dev --filter=vue-counter",
     "vue:todo": "turbo run dev --filter=vue-todo",
     "vue:todo:electron": "turbo run electron:dev --filter=vue-todo",
+    "react:todo": "turbo run dev --filter=react-todo",
     "format": "turbo run format",
     "format:check": "turbo run format:check"
   },

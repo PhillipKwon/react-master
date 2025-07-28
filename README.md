@@ -7,6 +7,7 @@ React와 Vue 프로젝트들을 포함한 Turborepo 기반 모노레포입니다
 ```
 packages/
 ├── react-counter/     # React 카운터 앱
+├── react-todo/        # React Todo 앱
 ├── vue-counter/       # Vue 카운터 앱
 └── vue-todo/          # Vue Todo 앱 (Electron 지원)
 ```
@@ -18,6 +19,8 @@ packages/
 - **Frontend**: React 19, Vue 3
 - **Build Tool**: Vite
 - **Language**: TypeScript
+- **State Management**: Zustand (React), Pinia (Vue)
+- **Styling**: Tailwind CSS
 
 ## 시작하기
 
@@ -40,6 +43,9 @@ pnpm dev
 ```bash
 # React Counter
 pnpm react:counter
+
+# React Todo
+pnpm react:todo
 
 # Vue Counter
 pnpm vue:counter
@@ -88,6 +94,36 @@ pnpm format:check
 ```bash
 pnpm clean
 ```
+
+## 프로젝트별 기능
+
+### React Counter
+
+- React 19 + TypeScript
+- 간단한 카운터 기능
+- Vite 빌드 도구
+
+### React Todo
+
+- React 19 + TypeScript
+- Zustand 상태 관리
+- Tailwind CSS 스타일링
+- 할 일 추가/삭제/완료 기능
+- 로컬 스토리지 저장
+
+### Vue Counter
+
+- Vue 3 + TypeScript
+- 간단한 카운터 기능
+- Vite 빌드 도구
+
+### Vue Todo
+
+- Vue 3 + TypeScript
+- Pinia 상태 관리
+- Tailwind CSS 스타일링
+- Electron 데스크톱 앱 지원
+- 할 일 관리 기능
 
 ## Turborepo 기능
 
