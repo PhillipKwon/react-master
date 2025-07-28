@@ -59,6 +59,6 @@ jspm_packages/
 .env
 
 # Electron build artifacts
-vue-todo/release/
-vue-todo/dist/
-vue-todo/build/ 
+packages/vue-todo/release/
+packages/vue-todo/dist/
+packages/vue-todo/build/ 

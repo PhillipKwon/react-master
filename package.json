@@ -1,0 +1,28 @@
+{
+  "name": "react-master",
+  "version": "1.0.0",
+  "description": "Monorepo containing React and Vue projects",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel dev",
+    "build": "pnpm --recursive build",
+    "lint": "pnpm --recursive lint",
+    "preview": "pnpm --parallel preview",
+    "clean": "pnpm --recursive clean",
+    "install:all": "pnpm install",
+    "react:counter": "pnpm --filter react-counter dev",
+    "vue:counter": "pnpm --filter vue-counter dev",
+    "vue:todo": "pnpm --filter vue-todo dev",
+    "vue:todo:electron": "pnpm --filter vue-todo electron:dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "~5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
