@@ -5,19 +5,22 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm --parallel dev",
-    "build": "pnpm --recursive build",
-    "lint": "pnpm --recursive lint",
-    "preview": "pnpm --parallel preview",
-    "clean": "pnpm --recursive clean",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "preview": "turbo run preview",
+    "clean": "turbo run clean",
     "install:all": "pnpm install",
-    "react:counter": "pnpm --filter react-counter dev",
-    "vue:counter": "pnpm --filter vue-counter dev",
-    "vue:todo": "pnpm --filter vue-todo dev",
-    "vue:todo:electron": "pnpm --filter vue-todo electron:dev"
+    "react:counter": "turbo run dev --filter=react-counter",
+    "vue:counter": "turbo run dev --filter=vue-counter",
+    "vue:todo": "turbo run dev --filter=vue-todo",
+    "vue:todo:electron": "turbo run electron:dev --filter=vue-todo",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "turbo": "^2.0.0",
     "typescript": "~5.8.3"
   },
   "engines": {
